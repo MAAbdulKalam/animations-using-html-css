@@ -1,0 +1,82 @@
+.container{
+    display: flex;
+}
+.child{
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+}
+
+.ball1{
+    width: 150px;
+    height: 150px;
+    left: 30%;
+    top: 75%;
+    animation: ball1 3s linear infinite;
+    animation-direction: alternate;
+    background-image: linear-gradient(to right, #032e5d, #007bff);
+}
+@keyframes ball1 {
+    0%{ 
+        transform: translateY(-420px);
+    }
+    50%{
+        transform: rotate(-90deg);
+    }
+    75%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: translateY(-420px);
+    }
+}
+.ball2{
+    width: 100px;
+    height: 100px;
+    left: 45%;
+    top: 82.5%;
+    animation: ball2 2000ms ease infinite;
+    animation-direction: alternate;
+    background-image: linear-gradient(to right, #f7b733, #ff4700);
+}
+@keyframes ball2 {
+    0%{
+        transform: translateY(-500px);
+    }
+    50%{
+        transform: rotate(-90deg);
+    }
+    75%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: translateY(-500px);
+    }
+}
+.ball3{
+    width: 200px;
+    height: 200px;
+    left: 60%;
+    top: 68%;
+    animation: ball3 5s linear infinite;
+    animation-direction: alternate;
+    background-image: linear-gradient(to right, #09e334, #0e510e);
+}
+@keyframes ball3 {
+    0%{
+        transform: translateY(-200px);
+    }
+    50%{
+        /* transform: rotate(-90deg); */
+    }
+    75%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
